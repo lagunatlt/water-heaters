@@ -41,67 +41,78 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="nav__header">
-				<div class="nav-logo">
-					<a href="#"><img src="" alt="Уютный дом"></a>
-				</div>
-				<div class="nav-desc">
-					Ремонт и установка любых видов водонагревателей в Москве и области
-				</div>
-				<nav class="menu menu__header">
-					<ul>
-						<li class="nav-item"><a href="#">Главная</a></li>
-						<li class="nav-item"><a href="#">Цены</a></li>
-						<li class="nav-item"><a href="#">Отзывы</a></li>
-						<li class="nav-item"><a href="#">Контакты</a></li>
-						<li class="nav-item"><a href="#">Каталог</a></li>
-					</ul>
-				</nav>
-				<div class="nav-contact">
-					<a href="#">V</a>
-					<div class="nav-c__wrap">
-						<a href="tel:+79031541747">+7 (903) 154-17-47</a>
-						<a href="tel:+74950159792">+7 (495) 015-97-92</a>
-						<a href="#">Заказать звонок сейчас</a>
+			<div class="nav__header--fixed">
+				<div class="container nav__header">
+					<div class="nav-logo">
+						<a href="#"><img src="/img/logo.png" alt="Уютный дом"></a>
+					</div>
+					<div class="nav-desc">
+						Ремонт и установка любых видов водонагревателей в Москве и области
+					</div>
+					<nav class="menu menu__header">
+						<ul>
+							<li class="nav-item"><a href="#">Главная</a></li>
+							<li class="nav-item"><a href="#">Цены</a></li>
+							<li class="nav-item"><a href="#">Отзывы</a></li>
+							<li class="nav-item"><a href="#">Контакты</a></li>
+							<li class="nav-item"><a href="#">Каталог</a></li>
+						</ul>
+					</nav>
+					<div class="nav-contact">
+						<a href="#">V</a>
+						<div class="nav-c__wrap">
+							<a class="nav-c__phone" href="tel:+79031541747">+7 (903) 154-17-47</a>
+							<a class="nav-c__phone" href="tel:+74950159792">+7 (495) 015-97-92</a>
+							<a class="nav-c__modal" href="#">Заказать звонок сейчас</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="header__wrap">
 				<div class="header__main">
-					<h1>Ремонт и установка любых видов водонагревателей в Москве и области</h1>
-					<a href="#">Мы сделаем чистку бойлера бесплатно</a>
-					<p>Имеются скидки для постоянных клиентов, пенсионеров и многодетным семьям.</p>
+					<h1>Ремонт и установка любых видов водонагревателей<br>в Москве и области</h1>
+					<p class="header__present block--yellow1">Мы сделаем чистку бойлера <span>бесплатно</span></p>
+					<p class="header__main-desc">Имеются скидки для постоянных клиентов, пенсионеров и многодетным семьям.</p>
 					<ul>
 						<li>Лицензированные мастера	с опытом более 20 лет</li>
-						<li>Официальная гарантия 3 года</li>
+						<li>Официальная гарантия<br>3 года</li>
 						<li>Выезд, диагностика и консультация = БЕСПЛАТНО</li>
-						<li>Оригинальные запчасти в наличии</li>
+						<li>Оригинальные запчасти<br>в наличии</li>
 					</ul>
 				</div>
-				<div class="header__form">
-					<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
-					<p class="form__cont">Выберите удобный способ связи:</p>
-					<form action="#" method="post">
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Телефон</span>
+				<div class="header__form form__inner-after">
+					<div class="main__form-inner">
+						<div class="main__form">
+							<div class="form__border">
+								<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
+								<p class="form__cont">Выберите удобный способ связи:</p>
+								<form action="#" method="post">
+									<div class="radio__wrap">
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-phone" checked>
+											<span class="radio__item-block radio__item-phone">Телефон</span>
+										</div>
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-whatsapp">
+											<span class="radio__item-block radio__item-whatsapp">WhatsApp</span>
+										</div>
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-viber">
+											<span class="radio__item-block radio__item-viber">Viber</span>
+										</div>
+									</div>
+									<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+									<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+									<div class="form__checkbox-wrap">
+										<input class="form__checkbox" type="checkbox" name="check" id="">
+										<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
+									</div>
+								</form>
+								</div>
+							<div class="form__footer"><p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p></div>
 						</div>
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Whatsapp</span>
-						</div>
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Viber</span>
-						</div>
-						<input type="tel" name="phone" id="" placeholder="Введите свой телефон">
-						<button type="submit">Оставить заявку</button>
-						<div>
-							<input type="checkbox" name="check" id="">
-							<p>Я принимаю условия <a href="#">передачи информации</a></p>
-						</div>
-					</form>
-					<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -117,7 +128,7 @@
 						<li><span>Инструменты и запчасти у Мастера с собой</span><br>Среднее время ремонта водонагревателя 30 минут</li>
 						<li><span>Мастер приедет в удобное для Вас время</span><br>Мы работаем круглосуточно и сможем приехать в любое удобное для Вас время</li>
 					</ul>
-					<a href="#">Вызвать мастера</a>
+					<a class="btn btn--blue" href="#">Вызвать мастера</a>
 				</div>
 			</div>
 		</div>
@@ -165,7 +176,7 @@
 							<input type="checkbox" name="" id="">
 							<span>Другая неисправность</span>
 						</div>
-						<button type="button">Следующий шаг</button>
+						<button class="btn btn--blue" type="button">Следующий шаг</button>
 						<div class="current-step">Шаг: 1 из 2</div>
 					</div>
 					<div class="calc-item step-2"></div>
@@ -205,32 +216,43 @@
 			<div class="consult__wrap">
 				<div class="consult__main">
 					<h2>Получите консультацию по выбору водонагревателей, мы расскажем, как можно дополнительно сэкономить до 30%</h2>
-					<p>Заполните контактную форму, специалист нашей компании свяжется с Вами в течение 10 минут</p>
+					<p class="block--yellow2">Заполните контактную форму, специалист нашей компании свяжется с Вами в течение 10 минут</p>
 				</div>
-				<div class="consult__form">
-					<p class="form__title">Получить бесплатную консультацию по водонагревателям</p>
-					<p class="form__cont">Выберите удобный способ связи:</p>
-					<form action="#" method="post">
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Телефон</span>
+				<div class="consult__form form__inner-after">
+					<div class="main__form-inner">
+						<div class="main__form">
+							<div class="form__border">
+								<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
+								<p class="form__cont">Выберите удобный способ связи:</p>
+								<form action="#" method="post">
+									<div class="radio__wrap">
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-phone" checked>
+											<span class="radio__item-block radio__item-phone">Телефон</span>
+										</div>
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-whatsapp">
+											<span class="radio__item-block radio__item-whatsapp">WhatsApp</span>
+										</div>
+										<div class="radio__item">
+											<input type="radio" name="contphone" id="radio-viber">
+											<span class="radio__item-block radio__item-viber">Viber</span>
+										</div>
+									</div>
+									<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+									<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+									<div class="form__checkbox-wrap">
+										<input class="form__checkbox" type="checkbox" name="check" id="">
+										<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
+									</div>
+								</form>
+							</div>
+							<div class="form__footer">
+								<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+							</div>
 						</div>
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Whatsapp</span>
-						</div>
-						<div>
-							<input type="radio" name="contphone" id="">
-							<span>Viber</span>
-						</div>
-						<input type="tel" name="phone" id="" placeholder="Введите свой телефон">
-						<button type="submit">Оставить заявку</button>
-						<div>
-							<input type="checkbox" name="check" id="">
-							<p>Я принимаю условия <a href="#">передачи информации</a></p>
-						</div>
-					</form>
-					<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+					</div>
+				
 				</div>
 			</div>
 		</div>
@@ -239,7 +261,7 @@
 		<div class="container">
 			<h2>Как начать работать с нами?</h2>
 			<ul>
-				<li><a href="#">Оставить заявку</a></li>
+				<li><a class="btn btn--blue" href="#">Оставить заявку</a></li>
 				<li>Бесплатная консультация от нашего мастера, согласование времени и цены по ремонту</li>
 				<li>Приезд мастера и ремонт водонагревателя</li>
 				<li>Оплата после полной проверки работоспособности водонагревателя</li>
@@ -328,30 +350,41 @@
 						</div>
 					</div>
 			</div>
-			<div class="ques__form">
-				<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
-				<p class="form__cont">Выберите удобный способ связи:</p>
-				<form action="#" method="post">
-					<div>
-						<input type="radio" name="contphone" id="">
-						<span>Телефон</span>
+			<div class="answer__form form__inner-after">
+				<div class="main__form-inner">
+					<div class="main__form">
+						<div class="form__border">
+							<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
+							<p class="form__cont">Выберите удобный способ связи:</p>
+							<form action="#" method="post">
+								<div class="radio__wrap">
+									<div class="radio__item">
+										<input type="radio" name="contphone" id="radio-phone" checked>
+										<span class="radio__item-block radio__item-phone">Телефон</span>
+									</div>
+									<div class="radio__item">
+										<input type="radio" name="contphone" id="radio-whatsapp">
+										<span class="radio__item-block radio__item-whatsapp">WhatsApp</span>
+									</div>
+									<div class="radio__item">
+										<input type="radio" name="contphone" id="radio-viber">
+										<span class="radio__item-block radio__item-viber">Viber</span>
+									</div>
+								</div>
+								<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+								<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+								<div class="form__checkbox-wrap">
+									<input class="form__checkbox" type="checkbox" name="check" id="">
+									<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
+								</div>
+							</form>
+						</div>
+						<div class="form__footer">
+							<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+						</div>
 					</div>
-					<div>
-						<input type="radio" name="contphone" id="">
-						<span>Whatsapp</span>
-					</div>
-					<div>
-						<input type="radio" name="contphone" id="">
-						<span>Viber</span>
-					</div>
-					<input type="tel" name="phone" id="" placeholder="Введите свой телефон">
-					<button type="submit">Оставить заявку</button>
-					<div>
-						<input type="checkbox" name="check" id="">
-						<p>Я принимаю условия <a href="#">передачи информации</a></p>
-					</div>
-				</form>
-				<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+				</div>
+			
 			</div>
 		</div>
 	</section>
