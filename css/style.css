@@ -15,7 +15,9 @@ a:hover {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
 }
-
+button {
+	box-sizing: border-box;
+}
 button:active,
 button:focus {
 	outline: none !important;
@@ -27,8 +29,21 @@ button::-moz-focus-inner {
 
 input {
 	outline: none;
+	box-sizing: border-box;
 }
 ul,li {
 	list-style: none;
 }
 /* --------- */
+html,
+input,
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
