@@ -40,22 +40,22 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<nav>
+			<div class="nav__header">
 				<div class="nav-logo">
 					<a href="#"><img src="" alt="Уютный дом"></a>
 				</div>
 				<div class="nav-desc">
 					Ремонт и установка любых видов водонагревателей в Москве и области
 				</div>
-				<div class="nav-items">
+				<nav class="menu menu__header">
 					<ul>
-						<li class="nav-item">Главная</li>
-						<li class="nav-item">Цены</li>
-						<li class="nav-item">Отзывы</li>
-						<li class="nav-item">Контакты</li>
-						<li class="nav-item">Каталог</li>
+						<li class="nav-item"><a href="#">Главная</a></li>
+						<li class="nav-item"><a href="#">Цены</a></li>
+						<li class="nav-item"><a href="#">Отзывы</a></li>
+						<li class="nav-item"><a href="#">Контакты</a></li>
+						<li class="nav-item"><a href="#">Каталог</a></li>
 					</ul>
-				</div>
+				</nav>
 				<div class="nav-contact">
 					<a href="#">V</a>
 					<div class="nav-c__wrap">
@@ -64,7 +64,7 @@
 						<a href="#">Заказать звонок сейчас</a>
 					</div>
 				</div>
-			</nav>
+			</div>
 			<div class="header__wrap">
 				<div class="header__main">
 					<h1>Ремонт и установка любых видов водонагревателей в Москве и области</h1>
@@ -234,14 +234,143 @@
 			</div>
 		</div>
 	</section>
-	<section class="to-work"></section>
-	<section class="slide-portfolio"></section>
-	<section class="slide-certif"></section>
-	<section class="contract"></section>
-	<section class="reviews"></section>
-	<section class="ques"></section>
-	<section class="map"></section>
-	<footer></footer>
+	<section class="to-work">
+		<div class="container">
+			<h2>Как начать работать с нами?</h2>
+			<ul>
+				<li><a href="#">Оставить заявку</a></li>
+				<li>Бесплатная консультация от нашего мастера, согласование времени и цены по ремонту</li>
+				<li>Приезд мастера и ремонт водонагревателя</li>
+				<li>Оплата после полной проверки работоспособности водонагревателя</li>
+			</ul>
+		</div>
+	</section>
+	<section class="slide-portfolio">
+		<div class="container">
+			<h2>Наши работы</h2>
+			<div class="slide-portfolio__items">
+				<div class="portfolio__item"><img src="" alt=""></div>
+				<div class="portfolio__item"><img src="" alt=""></div>
+				<div class="portfolio__item"><img src="" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<section class="slide-certif">
+		<div class="container">
+			<h2>Наши сертификаты</h2>
+			<div class="slide-certif__items">
+				<div class="slide-certif__item"><img src="" alt=""></div>
+				<div class="slide-certif__item"><img src="" alt=""></div>
+				<div class="slide-certif__item"><img src="" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<section class="contract">
+		<div class="container">
+			<div class="contract__wrap">
+				<div class="contract-l">
+					<h2>Стоимость работ закрепляется в договоре и остается неизменной</h2>
+					<ul>
+						<li>Мы несем юридическую ответственность за качество ремонтных работ.</li>
+						<li>Выдаем официальную гарантию 3 года.</li>
+					</ul>
+				</div>
+				<div class="contract-r">
+					<a href="#">Посмотреть прайс-лист</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<h2>Отзывы наших клиентов</h2>
+			<div class="reviews__items">
+				<div class="reviews__item"></div>
+				<div class="reviews__item"></div>
+				<div class="reviews__item"></div>
+			</div>
+		</div>
+	</section>
+	<section class="ques">
+		<div class="container">
+			<div class="ques__main">
+				<h2>Ответы на частые вопросы</h2>
+				<div class="ques__block"></div>
+			</div>
+			<div class="ques__form">
+				<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
+				<p class="form__cont">Выберите удобный способ связи:</p>
+				<form action="#" method="post">
+					<div>
+						<input type="radio" name="contphone" id="">
+						<span>Телефон</span>
+					</div>
+					<div>
+						<input type="radio" name="contphone" id="">
+						<span>Whatsapp</span>
+					</div>
+					<div>
+						<input type="radio" name="contphone" id="">
+						<span>Viber</span>
+					</div>
+					<input type="tel" name="phone" id="" placeholder="Введите свой телефон">
+					<button type="submit">Оставить заявку</button>
+					<div>
+						<input type="checkbox" name="check" id="">
+						<p>Я принимаю условия <a href="#">передачи информации</a></p>
+					</div>
+				</form>
+				<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+			</div>
+		</div>
+	</section>
+	<div class="contact">
+		<div class="container-fluid contact-fluid">
+			<div class="contact__map-wrap" id="overlay">
+				<iframe id="map1" src="https://snazzymaps.com/embed/231487" style="border:none;"></iframe>
+				<iframe id="map2" src="https://snazzymaps.com/embed/232471" style="border:none;"></iframe>
+			</div>
+			<div class="contact__form-wrap">
+				<div class="contact__form">
+					<h4 class="contact__form-title">Наши контакты</h4>
+					<p><span>Центральный офис</span></p>
+					<p id="contactAdress">г. Москва, улица Полярная 31 стр 1</p>
+					<a href="#" class="contact__phone phone">+7 (495) 015-97-92</a>
+					<p class="form-main__contact">Связаться через мессенджеры <a href="#" class="form-main__w">W</a>
+						<a href="#" class="form-main__v">V<a href="#" class="form-main__v mobile"></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="nav__footer">
+				<div class="nav-logo">
+					<a href="#"><img src="" alt="Уютный дом"></a>
+				</div>
+				<div class="nav__desc">
+					Ремонт и установка любых видов водонагревателей в Москве и области
+				</div>
+				<nav class="menu menu__footer">
+					<ul>
+						<li class="nav-item"><a href="#">Главная</a></li>
+						<li class="nav-item"><a href="#">Цены</a></li>
+						<li class="nav-item"><a href="#">Отзывы</a></li>
+						<li class="nav-item"><a href="#">Вопрос-Ответ</a></li>
+						<li class="nav-item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="nav-contact">
+					<a href="#">V</a>
+					<div class="nav-c__wrap">
+						<a href="tel:+79031541747">+7 (903) 154-17-47</a>
+						<a href="tel:+74950159792">+7 (495) 015-97-92</a>
+						<a href="#">Заказать звонок сейчас</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
