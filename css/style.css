@@ -749,3 +749,45 @@ div.calc__items:nth-child(1)>p:nth-child(2) {
 	font-weight: 500;
 	font-size: 18px;
 }
+
+/* section why */
+.why {
+	background-color: #1066E8;
+	text-align: center;
+	color: #fff;
+}
+.why h2 {
+	color: #fff;
+}
+.why__wrap ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.why__wrap li {
+	position: relative;
+	text-align: left;
+	width: 570px;
+	height: 189px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	color: #000;
+	display: flex;
+	align-items: center;
+	padding-left: 250px;
+	padding-right: 43px;
+	margin-bottom: 47px;
+	z-index: 2;
+}
+.why__wrap li::before {
+	position: absolute;
+	content: '';
+	bottom: -9px;
+	left: 50%;
+	width: 500px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: #E7E7E7;
+	transform: translateX(-50%);
+	z-index: -1;
+}
