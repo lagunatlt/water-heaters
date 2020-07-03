@@ -49,6 +49,9 @@ section,
 footer {
 	overflow: hidden;
 }
+section {
+	padding: 100px 0;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -568,10 +571,63 @@ footer {
 }
 
 /* section trans */
+.trans__wrap {
+	display: flex;
+	justify-content: space-between;
+}
 .trans-l {
 	background-image: url('../img/trans-l.png');
 	background-repeat: no-repeat;
 	width: 609px;
 	height: 545px;
 	background-size: auto;
+}
+h2 {
+	font-size: 38px;
+	line-height: 1.5;
+	color: #000;
+}
+.white {
+	color: #fff;
+}
+.trans-l {
+	margin-left: -109px;
+	margin-top: 25px;
+}
+.trans-r {
+	width: 100%;
+	max-width: 600px;
+}
+.trans-r h2 {
+	margin-bottom: 70px;
+}
+.trans-r li {
+	position: relative;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.8;
+	padding-left: 90px;
+	margin-bottom: 54px;
+}
+.trans-r li span {
+	font-weight: bold;
+	font-size: 21px;
+}
+.trans-r li::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	width: 54px;
+	height: 54px;
+	background-image: url('../img/main-sprite.svg');
+	background-repeat: no-repeat;
+	background-position: -349px 0;
+	transform: translateY(-50%);
+}
+.trans-r li:nth-child(2)::before {
+	background-position: -425px 0;
+}
+.trans-r li:nth-child(3)::before {
+	background-position: -500px 0;
 }
