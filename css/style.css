@@ -631,3 +631,121 @@ h2 {
 .trans-r li:nth-child(3)::before {
 	background-position: -500px 0;
 }
+
+/* section calc */
+section .calc {
+	padding-top: 26px;
+}
+.calc__wrap {
+	width: 100%;
+	max-width: 1030px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	padding: 66px 97px;
+}
+.calc__items-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.calc__items {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+div.calc__items:nth-child(1)>p:nth-child(2) {
+	font-weight: 500;
+	font-size: 17px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.calc h2 {
+	text-align: center;
+	margin-bottom: 21px;
+}
+
+.calc__item {
+	position: relative;
+	width: 400px;
+	height: 131px;
+	/* background: #1066E8; */
+	background-color: #fff;
+	box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+	border-radius: 7px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 34px;
+}
+.calc__item:last-child {
+	margin-bottom: 60px;
+}
+.calc__text {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.7;
+	text-decoration-line: underline;
+	color: #000;
+	padding-left: 130px;
+	padding-right: 37px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	border-radius: 7px;
+}
+.calc__text::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 40px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #1066E8;
+	transform: translateY(-50%);
+}
+.calc__text::after {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-image: url('../img/main-sprite.svg');
+	background-repeat: no-repeat;
+	background-position: -700px 10px;
+	transform: translateY(-50%);
+}
+.calc__item input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 2;
+	opacity: 0;
+}
+.calc__check:checked + .calc__text {
+	background-color: #1066E8;
+	color: #fff;
+}
+.calc__check:checked + .calc__text::before {
+	background: linear-gradient(180deg, #F2BE37 0%, #FFE99B 100%);
+}
+.calc__check:checked+.calc__text::after {
+	background-position: -669px 10px;
+}
+.current-step {
+	position: absolute;
+	bottom: 28px;
+	right: 0px;
+	font-weight: 500;
+	font-size: 18px;
+}
