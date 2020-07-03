@@ -35,10 +35,61 @@ ul,li {
 	list-style: none;
 }
 /* --------- */
+.font-white {
+	color: #fff;
+}
+.font-black {
+	color: #000;
+}
+.section--blue {
+	background-color: #1066E8;
+}
+
+
+
+
+
+
+
+.trans {
+	padding-top: 115px;
+	padding-bottom: 37px;
+}
+
+.calc {
+	padding-top: 90px;
+	padding-bottom: 115px;
+}
+
+.why {
+	padding-top: 70px;
+	padding-bottom: 35px;
+}
+.slide-brend {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html,
 input,
 button {
 	font-family: 'Montserrat', sans-serif;
+	color: #000;
 }
 body,
 .nav__header--fixed {
@@ -50,7 +101,9 @@ footer {
 	overflow: hidden;
 }
 section {
-	padding: 100px 0;
+	border: 1px solid #000;
+	/* padding-top: 90px;
+	padding-bottom: 40px; */
 }
 .container {
 	max-width: 1200px;
@@ -585,10 +638,6 @@ section {
 h2 {
 	font-size: 38px;
 	line-height: 1.5;
-	color: #000;
-}
-.white {
-	color: #fff;
 }
 .trans-l {
 	margin-left: -109px;
@@ -663,11 +712,11 @@ section.calc {
 	font-weight: 500;
 	font-size: 17px;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 .section-title {
 	text-align: center;
-	margin-bottom: 21px;
+	margin-bottom: 22px;
 }
 
 .calc__item {
@@ -755,13 +804,10 @@ section.calc {
 
 /* section why */
 .why {
-	background-color: #1066E8;
 	text-align: center;
 	color: #fff;
 }
-.why h2 {
-	color: #fff;
-}
+
 .why__wrap ul {
 	display: flex;
 	justify-content: space-between;
@@ -774,6 +820,9 @@ section.calc {
 	height: 189px;
 	background: #FFFFFF;
 	border-radius: 5px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.9;
 	color: #000;
 	display: flex;
 	align-items: center;
@@ -793,4 +842,25 @@ section.calc {
 	background-color: #E7E7E7;
 	transform: translateX(-50%);
 	z-index: -1;
+}
+.why__wrap li:after {
+	position: absolute;
+	content: '';
+	left: 60px;
+	top: 50%;
+	width: 137px;
+	height: 137px;
+	background-image: url('../img/why-sprite.png');
+	background-repeat: no-repeat;
+	background-position: 1px -35px;
+	transform: translateY(-50%);
+}
+.why__wrap li:nth-child(2)::after {
+	background-position: -235px -31px;
+}
+.why__wrap li:nth-child(3)::after {
+	background-position: -461px -31px;
+}
+.why__wrap li:nth-child(4)::after {
+	background-position: -708px -31px;
 }
