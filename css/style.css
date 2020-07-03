@@ -689,7 +689,7 @@ h2 {
 
 /* section calc */
 section.calc {
-	padding-top: 26px;
+	/* padding-top: 26px; */
 	background-image: url('../img/calc.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
