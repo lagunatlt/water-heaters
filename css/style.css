@@ -40,6 +40,15 @@ input,
 button {
 	font-family: 'Montserrat', sans-serif;
 }
+body,
+.nav__header--fixed {
+	max-width: 2000px;
+}
+header,
+section,
+footer {
+	overflow: hidden;
+}
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -62,7 +71,7 @@ button {
 }
 
 /* -----fixed----- */
-.nav__header--fixed {
+.nav__fixed {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -70,7 +79,7 @@ button {
 	z-index: 100;
 	transition: all 0.3s;
 }
-.nav__header--fixed.fixed-top {
+.nav__fixed.fixed-top {
 	background-color: #043681;
 	transition: all 0.3s;
 	box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
@@ -176,6 +185,30 @@ button {
 	justify-content: space-between;
 	padding-top: 150px;
 	z-index: 1;
+}
+.header__main-wrap::after {
+	position: absolute;
+	content: '';
+	left: -490px;
+	bottom: 81px;
+	width: 238px;
+	height: 305px;
+	background-image: url('../img/header-fon1.png');
+	background-repeat: repeat;
+	background-size: 238px;
+	z-index: -1;
+}
+.header__main-wrap::before {
+	position: absolute;
+	content: '';
+	left: -490px;
+	bottom: 81px;
+	width: 309px;
+	height: 536px;
+	background-image: url('../img/header-fon-smoke.png');
+	background-repeat: repeat;
+	background-size: 309px;
+	z-index: -1;
 }
 .header__main {
 	color: #fff;
