@@ -72,7 +72,27 @@ ul,li {
 }
 .consult {
 	padding-top: 90px;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
+}
+.to-work {
+	padding-top: 70px;
+	padding-bottom: 100px;
+}
+.slide-portfolio {
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+.slide-certif {
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+.contract {
+	padding-top: 70px;
+	padding-bottom: 160px;
+}
+.reviews {
+	padding-top: 70px;
+	padding-bottom: 90px;
 }
 
 
@@ -724,6 +744,10 @@ section.calc {
 	text-align: center;
 	margin-bottom: 22px;
 }
+h2.title--small {
+	font-size: 34px;
+	margin-bottom: 70px;
+}
 
 .calc__item {
 	position: relative;
@@ -936,7 +960,9 @@ section.calc {
 }
 
 .main-slider .slick-prev:hover,
-.main-slider .slick-next:focus {
+.main-slider .slick-next:hover,
+.main-slider .slick-next:focus,
+.main-slider .slick-prev:focus {
 	background: #fff;
 }
 
@@ -1016,4 +1042,179 @@ section.consult {
 	font-weight: 500;
 	font-size: 17px;
 	line-height: 1.8;
+}
+
+/* section to-work */
+.to-work__items {
+	background-image: url('../img/to-work-line.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 50px;
+}
+.to-work ul {
+	display: flex;
+	justify-content: space-around;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+.to-work li {
+	/* border: 1px solid #000; */
+
+	position: relative;
+	width: 100%;
+	max-width: 245px;
+	height: 360px;
+	padding-top: 220px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.8;
+}
+.to-work__items li span {
+	font-weight: 600;
+}
+.to-work li::before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 50%;
+	width: 141px;
+	height: 141px;
+	border-radius: 50%;
+	background-color: #1066E8;
+	transform: translateX(-50%);
+}
+.to-work li::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 50%;
+	width: 205px;
+	height: 130px;
+	background-image: url('../img/to-work-sprite.png');
+	background-repeat: no-repeat;
+	background-position: 0 -9px;
+	transform: translateX(-50%);
+}
+.to-work li:nth-child(1) {
+	margin-top: 66px;
+}
+.to-work li:nth-child(2) {
+	margin-top: 25px;
+}
+.to-work li:nth-child(2)::after {
+	background-position: -325px -7px;
+}
+.to-work li:nth-child(3) {
+	margin-top: 49px;
+}
+.to-work li:nth-child(3)::after {
+	background-position: -671px -13px;
+}
+.to-work li:nth-child(4) {
+	margin-top: 81px;
+}
+.to-work li:nth-child(4)::after {
+	background-position: -1017px -7px;
+}
+.to-work  a.btn:nth-child(1) {
+	margin-left: -52px;
+}
+
+/* section slide-portfolio */
+.slide-portfolio__items .slick-slide {
+	padding: 0 55px;
+}
+
+
+/* section slide-certif */
+.slider--white-theme .slick-prev,
+.slider--white-theme .slick-next {
+	    background: RGBA(16, 102, 232, 0.8);
+}
+
+.slider--white-theme .slick-next::before {
+	background-position: -66px 1px;
+}
+
+.slider--white-theme .slick-prev::before {
+	background-position: -47px 1px;
+}
+
+.slider--white-theme .slick-dots li button::before {
+	background-color:RGB(242, 190, 55);
+}
+
+.slider--white-theme .slick-dots li button::before {
+	width: 14px;
+	height: 14px;
+}
+
+.slider--white-theme .slick-dots li button {
+	    background: RGB(16, 102, 232);
+}
+.slider--white-theme .slick-prev:hover,
+.slider--white-theme .slick-next:hover,
+.slider--white-theme .slick-next:focus,
+.slider--white-theme .slick-prev:focus {
+	background: RGB(16, 102, 232);
+}
+
+/* section contract */
+.contract__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.contract-l {
+	width: 100%;
+	max-width: 655px;
+}
+.contract-l h2 {
+	margin-bottom: 53px;
+}
+.contract-l li {
+	position: relative;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 1.9;
+	padding-left: 70px;
+	margin-bottom: 30px;
+}
+.contract-l li::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	width: 43px;
+	height: 48px;
+	background-image: url('../img/main-sprite.svg');
+	background-repeat: no-repeat;
+	background-position: -565px 0;
+	transform: translateY(-50%);
+}
+.contract-l li:nth-child(2)::before {
+	background-position: -621px 0;
+}
+.contract-r {
+	position: relative;
+	width: 422px;
+	height: 333px;
+	flex-shrink: 0;
+	background-color: #1066E8;
+	border-radius: 5px;
+	background-image: url('../img/contract-r-price.png');
+	background-repeat: no-repeat;
+	background-position: center 30px;
+}
+.contract-r a{
+	position: absolute;
+	bottom: -54px;
+	left: calc(50% - 177px);
+	/* transform: translateX(-50%); */
+}
+
+/* section reviews */
+.slide-reviews .slick-slide {
+	padding: 0 17px;
+	padding: 0 23px;
 }
