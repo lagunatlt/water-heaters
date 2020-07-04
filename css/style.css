@@ -1161,6 +1161,20 @@ section.consult {
 }
 
 /* section contract */
+.contract::before {
+	position: absolute;
+	content: '';
+	left: 70px;
+	top: 50%;
+	width: 129px;
+	height: 255px;
+	background-image: url('../img/contract-l-pen.png');
+	background-repeat: no-repeat;
+	background-size: 129px;
+	transform: translateY(-50%);
+}
+
+
 .contract__wrap {
 	display: flex;
 	justify-content: space-between;
@@ -1217,4 +1231,14 @@ section.consult {
 .slide-reviews .slick-slide {
 	padding: 0 17px;
 	padding: 0 23px;
+}
+
+/* section answers */
+.answers__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.answers__main {
+	width: 100%;
+	max-width: 600px;
 }
