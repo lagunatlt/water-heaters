@@ -1309,3 +1309,81 @@ section.consult {
 .answer__form {
 	margin-top: 25px;
 }
+
+/* -----map----- */
+.contact {
+	position: relative;
+}
+
+.contact__map-wrap iframe {
+	width: 100%;
+	height: 680px;
+}
+
+.scrolloff {
+	pointer-events: none;
+}
+
+.contact__form-wrap {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	max-width: 429px;
+	background: #FFFFFF;
+	border-radius: 15px;
+	/* border: 1px solid red; */
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-box-shadow: 0 0 15px rgb(113, 113, 113);
+	box-shadow: 0 0 15px rgb(113, 113, 113);
+}
+
+.contact__form {
+	border: 1px solid #D1D1D1;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 15px;
+	margin: 16px 13px;
+	padding: 20px 27px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.contact__form-title {
+	margin-bottom: 45px;
+	font-weight: bold;
+	font-size: 2.200em;
+	color: #000000;
+}
+
+.contact__form>p:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.contact__form>p:nth-child(3) {
+	margin-bottom: 35px;
+}
+
+.contact__form>p:nth-child(4) {
+	margin-bottom: 40px;
+}
+
+.contact__form p span {
+	font-weight: bold;
+}
+
+.contact__phone {
+	display: inline-block;
+	margin-bottom: 30px;
+	font-weight: 600;
+	font-size: 2.200em;
+	text-decoration: none;
+	color: #000000;
+}
+
+.contact__phone:hover {
+	color: #2164E5;
+}
+/* ------------ */
