@@ -94,6 +94,10 @@ ul,li {
 	padding-top: 70px;
 	padding-bottom: 90px;
 }
+.answers {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
 
 
 
@@ -1241,4 +1245,67 @@ section.consult {
 .answers__main {
 	width: 100%;
 	max-width: 600px;
+}
+.answers__main h2 {
+	margin-bottom: 50px;
+}
+
+.accordion {
+	/* border: 1px solid black; */
+
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	color: #FFFFFF;
+	/* margin-bottom: 25px; */
+	cursor: pointer;
+	background: #1066E8;
+	border-radius: 10px;
+	width: 600px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	padding: 26px 35px;
+	user-select: none;
+}
+.accordion:before{
+	position: absolute;
+	content: '';
+	top: 30px;
+	right: 38px;
+	width: 18px;
+	height: 10px;
+	background-image: url('../img/arrow-sprite.svg');
+	background-repeat: no-repeat;
+	background-position: -92px 0px;
+	transition: all 0.3s;
+}
+.rotate::before {
+	transform: rotate(180deg);
+	transition: all 0.3s;
+}
+.accordion-content {
+	/* border: 1px solid red; */
+
+	background-color: RGBA(16, 102, 232, 0.1);
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height 0.2s ease-in-out;
+	transition: max-height 0.2s ease-in-out;
+	color: #000;
+	font-size: 14px;
+	line-height: 30px;
+	margin-bottom: 33px;
+	width: 580px;
+	margin-left: 10px;
+	border-radius: 0 0 10px 10px;
+}
+
+.accordion-content p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.answer__form {
+	margin-top: 25px;
 }
