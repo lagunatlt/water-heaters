@@ -31,7 +31,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<!-- <link	href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap&subset=cyrillic"rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" href="css/fonts.css"> -->
-	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<!-- <link rel="stylesheet" href="css/aos.css"> -->
@@ -39,6 +39,42 @@
 	<!-- <link rel="stylesheet" href="css/media.css"> -->
 </head>
 <body>
+	<div class="modal__form form__inner-after" id="hidden-content" style="display: none;">
+		<div class="main__form-inner">
+			<div class="main__form">
+				<div class="form__border">
+					<p class="form__title">Рассчитаем точную стоимость ремонта водонагревателя</p>
+					<p class="form__cont">Выберите удобный способ связи:</p>
+					<form action="#" method="post">
+						<div class="radio__wrap">
+							<div class="radio__item">
+								<input type="radio" name="contphone" id="radio-phone" checked>
+								<span class="radio__item-block radio__item-phone">Телефон</span>
+							</div>
+							<div class="radio__item">
+								<input type="radio" name="contphone" id="radio-whatsapp">
+								<span class="radio__item-block radio__item-whatsapp">WhatsApp</span>
+							</div>
+							<div class="radio__item">
+								<input type="radio" name="contphone" id="radio-viber">
+								<span class="radio__item-block radio__item-viber">Viber</span>
+							</div>
+						</div>
+						<input class="form-input__tel tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+						<button class="btn btn__form btn--blue" type="submit" disabled="">Оставить заявку</button>
+						<div class="form__checkbox-wrap">
+							<input class="form__checkbox" type="checkbox" name="check" id="">
+							<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
+						</div>
+					</form>
+				</div>
+				<div class="form__footer">
+					<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+				</div>
+			</div>
+		</div>
+	
+	</div>
 	<div class="nav__fixed">
 		<div class="container nav__header">
 			<div class="nav-logo">
@@ -61,7 +97,7 @@
 				<div class="nav-c__wrap">
 					<a class="nav-c__phone" href="tel:+79031541747">+7 (903) 154-17-47</a>
 					<a class="nav-c__phone" href="tel:+74950159792">+7 (495) 015-97-92</a>
-					<a class="nav-c__modal" href="#">Заказать звонок сейчас</a>
+					<a class="nav-c__modal" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок сейчас</a>
 				</div>
 			</div>
 		</div>
@@ -101,8 +137,8 @@
 											<span class="radio__item-block radio__item-viber">Viber</span>
 										</div>
 									</div>
-									<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
-									<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+									<input class="form-input__tel tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+									<button class="btn btn__form btn--blue" type="submit" disabled="">Оставить заявку</button>
 									<div class="form__checkbox-wrap">
 										<input class="form__checkbox" type="checkbox" name="check" id="">
 										<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
@@ -136,52 +172,129 @@
 	<section class="calc">
 		<div class="container">
 			<div class="calc__wrap">
-				<form action="#" method="post">
-					<div class="calc__items step-1">
+				<form action=".php" method="post">
+					<div class="calc__items step__item step-active" id="step-1">
 						<h2 class="section-title">Рассчитайте стоимость ремонта</h2>
-						<p class="section-desc">Какая неисправность? ( можете указать несколько)</p>
+						<p class="section-desc">Какая неисправность? (можете указать несколько)</p>
 						<div class="calc__items-wrap">
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch1">
 								<span class="calc__text">Выбивает УЗО / пробки при включении или нагреве</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch2">
 								<span class="calc__text">Протекает</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch3">
 								<span class="calc__text">Появился неприятный запах</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch4">
 								<span class="calc__text">Не включается</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch5">
 								<span class="calc__text">Не греет воду</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch6">
 								<span class="calc__text">Прибор бьет током</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch7">
 								<span class="calc__text">Заметно ослаб напор воды</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch8">
 								<span class="calc__text">Греет, но слишком медленно</span>
 							</div>
 							<div class="calc__item">
-								<input class="calc__check" type="checkbox" name="" id="">
+								<input class="calc__check check-step-1" type="checkbox" name="" id="step-1-ch9">
 								<span class="calc__text">Другая неисправность</span>
 							</div>
 						</div>
-						<button class="btn btn--blue" type="button">Следующий шаг</button>
-						<div class="current-step">Шаг: 1 из 2</div>
 					</div>
-					<div class="calc-item step-2"></div>
+					<div class="calc__items step__item" id="step-2" style="display: none;">
+						<h2 class="section-title">Выберите объем водонагревателя</h2>
+						<p class="section-desc">Какое количетсво литров вам требуется?</p>
+						<div class="calc__items-wrap">
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch1">
+								<span class="calc__text">От 5 до 30 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch2">
+								<span class="calc__text">От 30 до 50 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch3">
+								<span class="calc__text">От 50 до 80 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch4">
+								<span class="calc__text">От 80 до 100 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch5">
+								<span class="calc__text">От 100 до 160 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch6">
+								<span class="calc__text">От 160 до 300 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch7">
+								<span class="calc__text">Более 300 литров</span>
+							</div>
+							<div class="calc__item">
+								<input class="calc__check check-step-2" type="checkbox" name="" id="step-2-ch8">
+								<span class="calc__text">Неизвестно</span>
+							</div>
+						</div>
+					</div>
+					<div class="calc__items step__item" id="step-3" style="display: none;">
+						<div class="main__form-inner">
+							<div class="main__form">
+								<div class="form__border">
+									<p class="form__title">Спасибо за ответы!<br>
+									Получите результат расчета, оставив контакты</p>
+									<p class="calc-form__sale">+ гарантированная скидка 10% на ремонт Вашего водонагревателя</p>
+									<p class="form__cont">Выберите удобный способ связи:</p>
+									<!-- <form action="#" method="post"> -->
+										<div class="radio__wrap">
+											<div class="radio__item">
+												<input type="radio" name="contphone" id="radio-phone" checked>
+												<span class="radio__item-block radio__item-phone">Телефон</span>
+											</div>
+											<div class="radio__item">
+												<input type="radio" name="contphone" id="radio-whatsapp">
+												<span class="radio__item-block radio__item-whatsapp">WhatsApp</span>
+											</div>
+											<div class="radio__item">
+												<input type="radio" name="contphone" id="radio-viber">
+												<span class="radio__item-block radio__item-viber">Viber</span>
+											</div>
+										</div>
+										<input class="form-input__tel tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+										<button class="btn btn__form btn--blue" type="submit" disabled="">Оставить заявку</button>
+										<div class="form__checkbox-wrap">
+											<input class="form__checkbox" type="checkbox" name="check" id="">
+											<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
+										</div>
+									<!-- </form> -->
+								</div>
+								<div class="form__footer">
+									<p>или позвоните нам: <a href="tel:+74950159792">+7 (495) 015-97-92</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="step-button__inner">
+						<button class="btn-calc-prev" type="button" id="prev-step" style="opacity: 0;" disabled="" onclick="nextStep(-1)">Назад</button>
+						<button class="btn btn--blue" type="button" id="next-step" onclick="nextStep(1)" data-disabled="false">Следующий шаг</button>
+						<div class="current-step steps__bar" id="steps-bar">Шаг: <span id="current-numder">1</span> из 2</div>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -244,8 +357,8 @@
 											<span class="radio__item-block radio__item-viber">Viber</span>
 										</div>
 									</div>
-									<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
-									<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+									<input class="form-input__tel tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+									<button class="btn btn__form btn--blue" type="submit" disabled="">Оставить заявку</button>
 									<div class="form__checkbox-wrap">
 										<input class="form__checkbox" type="checkbox" name="check" id="">
 										<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
@@ -384,8 +497,8 @@
 											<span class="radio__item-block radio__item-viber">Viber</span>
 										</div>
 									</div>
-									<input class="form-input__tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
-									<button class="btn btn__form btn--blue" type="submit">Оставить заявку</button>
+									<input class="form-input__tel tel" type="tel" name="phone" id="" placeholder="Введите свой телефон">
+									<button class="btn btn__form btn--blue" type="submit" disabled="">Оставить заявку</button>
 									<div class="form__checkbox-wrap">
 										<input class="form__checkbox" type="checkbox" name="check" id="">
 										<p class="form__checkbox-desc">Я принимаю условия <a href="#">передачи информации</a></p>
@@ -464,9 +577,9 @@
 
 	<script src="./js/jq341.js"></script>
 	<script src="./js/slick.min.js"></script>
-	<!-- <script src="./js/jquery.fancybox.min.js"></script> -->
+	<script src="./js/jquery.fancybox.min.js"></script>
 	<!-- <script src="./js/aos.js"></script> -->
-	<!-- <script src="./js/jquery.validate.min.js"></script> -->
+	<script src="./js/jquery.validate.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 
