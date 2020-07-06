@@ -200,29 +200,30 @@ $(document).ready(function () {
 let currentStep = 1;
 function checkedInput(n) {
 	//функция проверики всех чекбоксов на данном шаге на чекед
-	let checkStep = document.querySelectorAll('.check-step-' + n);
-	let nextSteps = document.getElementById('next-step');
-
-	let ch1 = document.getElementById('step-' + n + '-ch1');
-	let ch2 = document.getElementById('step-' + n + '-ch2')
-	let ch3 = document.getElementById('step-' + n + '-ch3')
-	let ch4 = document.getElementById('step-' + n + '-ch4')
-	let ch5 = document.getElementById('step-' + n + '-ch5')
-	let ch6 = document.getElementById('step-' + n + '-ch6')
-	let ch7 = document.getElementById('step-' + n + '-ch7')
-	let ch8 = document.getElementById('step-' + n + '-ch8')
+	let checkStep = document.querySelectorAll('.check-step-' + n),
+			nextSteps = document.getElementById('next-step'),
+			ch1 = document.getElementById('step-' + n + '-ch1'),
+			ch2 = document.getElementById('step-' + n + '-ch2'),
+			ch3 = document.getElementById('step-' + n + '-ch3'),
+			ch4 = document.getElementById('step-' + n + '-ch4'),
+			ch5 = document.getElementById('step-' + n + '-ch5'),
+			ch6 = document.getElementById('step-' + n + '-ch6'),
+			ch7 = document.getElementById('step-' + n + '-ch7'),
+			ch8 = document.getElementById('step-' + n + '-ch8')
 	let ch9 = null;
 	if (currentStep === 1) {
 		ch9 = document.getElementById('step-' + n + '-ch9')
 	}
 
 	for (let r = 0; checkStep.length > r; r++) {
+
 		if (n === 1) {
 			if ((ch1.checked) || (ch2.checked) || (ch3.checked) || (ch4.checked) || (ch5.checked) || (ch6.checked) || (ch7.checked) || (ch8.checked) || (ch9.checked)) {
 				nextSteps.dataset.disabled = "false"
 			} else {
 				nextSteps.dataset.disabled = "true"
 			}
+			
 			checkStep[r].addEventListener('click', function() {
 				if ((ch1.checked) || (ch2.checked) || (ch3.checked) || (ch4.checked) || (ch5.checked) || (ch6.checked) || (ch7.checked) || (ch8.checked) || (ch9.checked)) {
 					nextSteps.dataset.disabled = "false"
@@ -231,12 +232,14 @@ function checkedInput(n) {
 				}
 			})
 		}
+
 		if (n === 2) {
 			if ((ch1.checked) || (ch2.checked) || (ch3.checked) || (ch4.checked) || (ch5.checked) || (ch6.checked) || (ch7.checked) || (ch8.checked)) {
 				nextSteps.dataset.disabled = "false"
 			} else {
 				nextSteps.dataset.disabled = "true"
 			}
+
 			checkStep[r].addEventListener('click', function () {
 				if ((ch1.checked) || (ch2.checked) || (ch3.checked) || (ch4.checked) || (ch5.checked) || (ch6.checked) || (ch7.checked) || (ch8.checked)) {
 					nextSteps.dataset.disabled = "false"
@@ -260,17 +263,16 @@ function nextStep(n) {
 		
 		if (((currentStep + n) < (calcItems.length + 1)) && (currentStep + n >= 1)) {
 			currentStep = currentStep + n;
-			let itemStep = document.querySelectorAll('.step__item');
-			let currentNumder = document.getElementById('current-numder');
-			
-			let stepsBar = document.getElementById('steps-bar');
-			let prevStep = document.getElementById('prev-step');
+			let itemStep = document.querySelectorAll('.step__item'),
+					currentNumder = document.getElementById('current-numder'),
+					stepsBar = document.getElementById('steps-bar'),
+					prevStep = document.getElementById('prev-step');
 	
 			currentNumder.innerText = currentStep;
 	
 			for (let i = 0; calcItems.length > i; i++) {
-				let numberId = calcItems[i].getAttribute('id');
-				let item = document.getElementById('step-' + currentStep);
+				let numberId = calcItems[i].getAttribute('id'),
+						item = document.getElementById('step-' + currentStep);
 	
 				if (numberId[4] = currentStep) {
 					item.style.display = 'flex';
