@@ -18,35 +18,48 @@ $('.slide-brend__items').slick({
 	dots: true,
 	centerMode: true,
 	variableWidth: true,
-	// responsive: [{
-	// 		breakpoint: 961,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 721,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 641,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 320,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	}
-	// ]
+	responsive: [{
+			breakpoint: 1281,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				centerMode: false,
+				// variableWidth: false,
+			}
+		},
+		{
+			breakpoint: 961,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				// centerMode: false,
+				// variableWidth: false,
+				// arrows: false,
+			}
+		},
+		{
+			breakpoint: 481,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
+			}
+		},
+		{
+			breakpoint: 321,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
+			}
+		}
+	]
 });
 $('.slide-portfolio__items').slick({
 	infinite: true,
@@ -56,35 +69,18 @@ $('.slide-portfolio__items').slick({
 	dots: true,
 	centerMode: true,
 	variableWidth: true,
-	// responsive: [{
-	// 		breakpoint: 961,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 721,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 641,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 320,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	}
-	// ]
+	responsive: [{
+			breakpoint: 721,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
+			}
+		}
+	]
 });
 $('.slide-certif__items').slick({
 	infinite: true,
@@ -95,31 +91,40 @@ $('.slide-certif__items').slick({
 	centerMode: true,
 	variableWidth: true,
 	responsive: [{
-			breakpoint: 1279,
+			breakpoint: 1281,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1,
+				centerMode: false,
 			}
 		},
 		{
-			breakpoint: 721,
+			breakpoint: 961,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 			}
 		},
 		{
-			breakpoint: 641,
+			breakpoint: 481,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
 			}
 		},
 		{
-			breakpoint: 320,
+			breakpoint: 321,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
 			}
 		}
 	]
@@ -132,35 +137,44 @@ $('.slide-reviews').slick({
 	dots: true,
 	centerMode: true,
 	variableWidth: true,
-	// responsive: [{
-	// 		breakpoint: 961,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 721,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 641,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	},
-	// 	{
-	// 		breakpoint: 320,
-	// 		settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1,
-	// 		}
-	// 	}
-	// ]
+	responsive: [{
+			breakpoint: 1281,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				centerMode: false,
+			}
+		},
+		{
+			breakpoint: 961,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+		{
+			breakpoint: 481,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
+			}
+		},
+		{
+			breakpoint: 321,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				autoplay: true,
+				autoplaySpeed: 1700,
+				speed: 1300,
+			}
+		}
+	]
 });
 
 //-----аккордион----- 
@@ -192,6 +206,15 @@ $(document).ready(function () {
 	});
 	$("#map1").mouseleave(function () {
 		$('#map1').addClass('scrolloff');
+	});
+});
+$(document).ready(function () {
+	$('#map2').addClass('scrolloff');
+	$('#overlay').on('click', function () {
+		$('#map2').removeClass('scrolloff');
+	});
+	$("#map2").mouseleave(function () {
+		$('#map2').addClass('scrolloff');
 	});
 });
 // -------------
